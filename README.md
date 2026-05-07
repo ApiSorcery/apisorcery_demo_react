@@ -101,10 +101,9 @@ The application uses AutoAPI to generate type-safe API client code. Configuratio
   "servers": [
     {
       "code": "demo",
-      "token": "72735b33815c4e5c9c2a924a8f4907ef",
+      "source": "https://apisorcery.com/demo-api/swagger-json",
       "version": 3,
       "enabled": true,
-      "source": "https://apisorcery.com/demo-api/swagger-json"
     }
   ]
 }

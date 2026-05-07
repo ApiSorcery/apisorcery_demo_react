@@ -1,3 +1,4 @@
+deploy_prod.sh
 # Logs
 logs
 *.log
@@ -22,6 +23,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-# Auto-generated API files
-src/apis/auto/
