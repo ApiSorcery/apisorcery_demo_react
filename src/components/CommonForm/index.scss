@@ -1,0 +1,14 @@
+.avatar-upload {
+  display: flex;
+  align-items: center;
+
+  .ant-upload-list-picture-card-container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .ant-upload-select-picture-card {
+    width: 100px;
+    height: 100px;
+  }
+}
