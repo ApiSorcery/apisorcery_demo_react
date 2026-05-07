@@ -165,6 +165,33 @@ const User: React.FC = () => {
     setFormVisible(false);
   };
 
+  const handleExport = async () => {
+    console.log('handleExport', queryModel);
+    try {
+      message.loading({ content: 'Exporting users...', key: 'export', duration: 0 });
+      const response = await apiUser.exportUsers({
+        code: queryModel.code || '',
+        name: queryModel.name || '',
+        email: '',
+      });
+
+      // Create download link
+      const url = window.URL.createObjectURL(response.data);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = response.name || `users_${dayjs().format('YYYY-MM-DD_HH-mm-ss')}.xlsx`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+
+      message.success({ content: 'Export completed successfully!', key: 'export' });
+    } catch (error) {
+      message.error({ content: 'Export failed, please try again', key: 'export' });
+      console.error('Export error:', error);
+    }
+  };
+
   const getFormTitle = () => {
     switch (operateType) {
       case 'add':
@@ -187,6 +214,7 @@ const User: React.FC = () => {
           onFilter={handleFilter}
           onReset={handleReset}
           onChange={handleQueryChange}
+          onExport={handleExport}
         />
       </div>
       <div className="table-container">

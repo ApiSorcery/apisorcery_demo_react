@@ -9,6 +9,7 @@ interface CommonQueryProps {
   onFilter: () => void;
   onReset: () => void;
   onChange: (values: Partial<QueryModel>) => void;
+  onExport?: () => void;
 }
 
 const CommonQuery: React.FC<CommonQueryProps> = ({
@@ -17,6 +18,7 @@ const CommonQuery: React.FC<CommonQueryProps> = ({
   onFilter,
   onReset,
   onChange,
+  onExport,
 }) => {
   const [form] = Form.useForm();
 
@@ -64,6 +66,11 @@ const CommonQuery: React.FC<CommonQueryProps> = ({
               Search
             </Button>
             <Button onClick={handleReset}>Reset</Button>
+            {onExport && (
+              <Button onClick={onExport}>
+                Export
+              </Button>
+            )}
           </Space>
         </Form.Item>
       </Form>
