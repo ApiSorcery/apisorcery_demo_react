@@ -245,7 +245,7 @@
                     {
                       "properties": {
                         "data": {
-                          "type": "number"
+                          "type": "integer"
                         }
                       }
                     }
