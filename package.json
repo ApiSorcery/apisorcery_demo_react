@@ -15,7 +15,7 @@
     "lint:eslint": "eslint . --fix",
     "lint": "run-s lint:*",
     "format": "prettier --write src/",
-    "swagger": "autoapi generate && prettier --write src/apis/auto"
+    "swagger": "apisorcery generate && prettier --write src/apis/auto"
   },
   "dependencies": {
     "antd": "^5.22.6",

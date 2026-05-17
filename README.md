@@ -81,7 +81,7 @@ autoapi-example-react/
 │   ├── App.tsx            # Root component
 │   ├── main.tsx           # Application entry
 │   └── index.scss         # Global styles
-├── .autoapirc.json        # AutoAPI configuration
+├── .apisorceryrc.json        # AutoAPI configuration
 ├── .env                   # Environment variables
 ├── vite.config.ts         # Vite configuration
 ├── tsconfig.json          # TypeScript configuration
@@ -90,7 +90,7 @@ autoapi-example-react/
 
 ## API Configuration
 
-The application uses AutoAPI to generate type-safe API client code. Configuration is in `.autoapirc.json`:
+The application uses AutoAPI to generate type-safe API client code. Configuration is in `.apisorceryrc.json`:
 
 ```json
 {

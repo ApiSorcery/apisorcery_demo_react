@@ -86,7 +86,7 @@ src/
 
 ## API Configuration
 
-The application connects to the demo API server. Configuration is in `.autoapirc.json`:
+The application connects to the demo API server. Configuration is in `.apisorceryrc.json`:
 
 - **API Source**: https://apisorcery.com/demo-api/swagger-json
 - **Base URL**: /demo-api (proxied in development)
