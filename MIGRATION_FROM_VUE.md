@@ -213,7 +213,7 @@ src/
 
 Both implementations maintain the same:
 
-1. **API Integration** - Same AutoAPI generated code
+1. **API Integration** - Same ApiSorcery generated code
 2. **Business Logic** - Same CRUD operations
 3. **Validation Rules** - Same form validation
 4. **User Experience** - Same UI/UX flow

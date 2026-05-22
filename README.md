@@ -1,6 +1,6 @@
 # ApiSorcery - React Example
 
-This is a React + TypeScript + Vite example application that demonstrates API integration using AutoAPI.
+This is a React + TypeScript + Vite example application that demonstrates API integration using ApiSorcery.
 
 ## Features
 
@@ -10,7 +10,7 @@ This is a React + TypeScript + Vite example application that demonstrates API in
 - ✅ Form Validation
 - ✅ Image Upload
 - ✅ Status Management
-- ✅ Type-safe API calls with AutoAPI
+- ✅ Type-safe API calls with ApiSorcery
 
 ## Tech Stack
 
@@ -20,7 +20,7 @@ This is a React + TypeScript + Vite example application that demonstrates API in
 - **Ant Design** - UI component library
 - **Axios** - HTTP client
 - **Day.js** - Date formatting
-- **AutoAPI** - API code generation
+- **ApiSorcery** - API code generation
 
 ## Prerequisites
 
@@ -64,7 +64,7 @@ The application will be available at: http://localhost:9528/react/
 ## Project Structure
 
 ```
-autoapi-example-react/
+apisorcery-example-react/
 ├── src/
 │   ├── apis/
 │   │   └── auto/          # Auto-generated API code
@@ -81,7 +81,7 @@ autoapi-example-react/
 │   ├── App.tsx            # Root component
 │   ├── main.tsx           # Application entry
 │   └── index.scss         # Global styles
-├── .apisorceryrc.json        # AutoAPI configuration
+├── .apisorceryrc.json        # ApiSorcery configuration
 ├── .env                   # Environment variables
 ├── vite.config.ts         # Vite configuration
 ├── tsconfig.json          # TypeScript configuration
@@ -90,7 +90,7 @@ autoapi-example-react/
 
 ## API Configuration
 
-The application uses AutoAPI to generate type-safe API client code. Configuration is in `.apisorceryrc.json`:
+The application uses ApiSorcery to generate type-safe API client code. Configuration is in `.apisorceryrc.json`:
 
 ```json
 {
