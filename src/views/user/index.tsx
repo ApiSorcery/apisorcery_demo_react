@@ -64,7 +64,7 @@ const User: React.FC = () => {
         },
         ...queryModel,
       });
-      const formattedData = (res.results || []).map((r) => ({
+      const formattedData = (res.results || []).map((r: any) => ({
         ...r,
         gender: r.gender ?? null,
         avatar: r.avatar ?? '',
