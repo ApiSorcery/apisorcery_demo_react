@@ -5,15 +5,17 @@ import * as Model from './model';
 /**
  * Delete file
  */
-export const deleteFile = base.createJsonRequest<Model.DeleteFileRequest>((req) => ({
-  url: `/file/${req.id}`,
-  method: 'DELETE',
-}));
+export const deleteFile = base.createJsonRequest<Model.DeleteFileRequest, Model.DeleteFileResponse>(
+  (req) => ({
+    url: `/file/${req.id}`,
+    method: 'DELETE',
+  }),
+);
 
 /**
  * Get file
  */
-export const getFile = base.createJsonRequest<Model.GetFileRequest>((req) => ({
+export const getFile = base.createJsonRequest<Model.GetFileRequest, string>((req) => ({
   url: `/file/${req.id}`,
   method: 'GET',
 }));
@@ -21,7 +23,7 @@ export const getFile = base.createJsonRequest<Model.GetFileRequest>((req) => ({
 /**
  * Upload file
  */
-export const uploadFile = base.createJsonRequest<Model.UploadFileRequest>((data) => {
+export const uploadFile = base.createJsonRequest<Model.UploadFileRequest, string>((data) => {
   const { onUploadProgress, ...rest } = data;
   return {
     url: `/file/upload`,
