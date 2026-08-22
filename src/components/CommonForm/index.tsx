@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Form, Input, Radio, Switch, Button, Space, Upload, message, Image } from 'antd';
+import { Form, Input, Radio, Switch, Button, Space, Upload, message } from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
 import type { UploadChangeParam, UploadFile } from 'antd/es/upload';
 import type { SelectOption, UserModel, OperateType } from '@/types/common';
@@ -163,14 +163,6 @@ const CommonForm: React.FC<CommonFormProps> = ({
             >
               {fileList.length === 0 && uploadButton}
             </Upload>
-            {fileList.length > 0 && fileList[0].url && (
-              <Image
-                src={fileList[0].url}
-                width={100}
-                height={100}
-                style={{ border: '1px solid #ccc', marginLeft: 8 }}
-              />
-            )}
           </div>
         </Form.Item>
 
