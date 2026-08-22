@@ -59,21 +59,6 @@ export interface GetUserPagedResponse {
   total: number;
 }
 
-/** Modify user information response parameters */
-export interface ModifyUserResponse {
-  data: any;
-}
-
-/** Delete user response parameters */
-export interface RemoveUserResponse {
-  data: any;
-}
-
-/** Delete file response parameters */
-export interface DeleteFileResponse {
-  data: any;
-}
-
 export interface ResultData {
   /**
    * Status code

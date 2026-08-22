@@ -5,12 +5,10 @@ import * as Model from './model';
 /**
  * Delete file
  */
-export const deleteFile = base.createJsonRequest<Model.DeleteFileRequest, Model.DeleteFileResponse>(
-  (req) => ({
-    url: `/file/${req.id}`,
-    method: 'DELETE',
-  }),
-);
+export const deleteFile = base.createJsonRequest<Model.DeleteFileRequest>((req) => ({
+  url: `/file/${req.id}`,
+  method: 'DELETE',
+}));
 
 /**
  * Get file
